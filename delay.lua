@@ -27,8 +27,8 @@ function M:update(dt)
             list[j] = list[i]
         end
     end
-    if j > 0 then
-        list[j+1] = nil
+    for i=j+1, len do
+        list[i] = nil
     end
 end
 
